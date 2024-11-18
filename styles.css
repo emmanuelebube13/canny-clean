@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f0f8f5; /* Light green background for a clean and welcoming vibe */
+    color: #333;
+  }
+  
+  header {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  header .banner {
+    width: 100%; /* Ensure the banner spans the full width */
+    height: 50vh; /* Set height to 50% of the viewport height */
+    object-fit: cover;
+    object-position:  bottom; /* Maintain aspect ratio and crop excess parts */
+  }
+  
+  .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 128, 0, 0.7); /* Green overlay for better text contrast */
+    padding: 1em;
+    border-radius: 10px;
+  }
+  
+  .header-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  main {
+    padding: 2em;
+  }
+  
+  section {
+    margin-bottom: 2em;
+  }
+  
+  .centered {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: #0077cc;
+  }
+  
+  form {
+    margin: 1em 0;
+  }
+  
+  label, select, input, button, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    background: #0077cc;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: #005fa3;
+  }
+  
+  #price-result, #form-response {
+    font-weight: bold;
+    margin-top: 1em;
+    color: #0077cc;
+  }
+  
+  .service-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1em;
+    background: #0077cc;
+    color: white;
+  }
+  
+  .social-links {
+    margin-bottom: 1em;
+  }
+  
+  .social-link {
+    margin: 0 0.5em;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  
+  .social-link:hover {
+    color: #d4d4d4;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header-text h1 {
+      font-size: 1.8em;
+    }
+  
+    main {
+      padding: 1em;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  

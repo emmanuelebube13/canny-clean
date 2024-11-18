@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canny Clean - Trash Can Cleaning Services</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <img src="./images/can3.jpg" alt="Canny Clean Banner" class="banner">
+    <div class="header-text">
+      <h1>Canny Clean</h1>
+      <p>Professional Trash Can Cleaning Services in Halifax, Nova Scotia</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="centered">
+      <h2>About Us</h2>
+      <p>Canny Clean is dedicated to providing top-notch cleaning services for your trash cans. Whether it's a one-time clean or a subscription plan, we’ve got you covered with options tailored to your needs!</p>
+    </section>
+
+    <section id="calculator" class="centered">
+      <h2>Price Calculator</h2>
+      <form id="price-calculator-form">
+        <label for="pricing-type">Choose Pricing Type:</label>
+        <select id="pricing-type" required>
+          <option value="" disabled selected>Select...</option>
+          <option value="perCan">Per-Can Pricing</option>
+          <option value="perHousehold">Per-Household Pricing</option>
+          <option value="subscription">Subscription-Based Pricing</option>
+        </select>
+
+        <div id="details-input"></div>
+
+        <button type="button" id="calculate-btn">Calculate Price</button>
+      </form>
+      <p id="price-result"></p>
+    </section>
+
+    <section id="services" class="centered">
+      <h2>Our Services</h2>
+      <img src="./images/can2.jpg" alt="Trash Can Cleaning Service" class="service-img">
+    </section>
+
+    <section id="reviews" class="centered">
+      <h2>Customer Reviews</h2>
+      <div id="review-list">
+        <p>No reviews yet. Be the first to share your experience!</p>
+      </div>
+    </section>
+
+    <section id="contact" class="centered">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Write your message here..." rows="5" required></textarea>
+        
+        <button type="button" id="send-message-btn">Send Message</button>
+      </form>
+      <p id="form-response"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2024 Canny Clean. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
