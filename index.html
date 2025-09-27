@@ -1,113 +1,133 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BioBin Pros offers professional cleaning services for your home, garage, and more. Reliable, detail-oriented, and customer-focused.">
-    <meta name="keywords" content="cleaning services, deep cleaning, regular cleaning, garage cleaning, move-in cleaning, BioBin Pros">
-    <meta name="author" content="BioBin Pros">
-    <title>BioBin Pros | Reliable Cleaning Services</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+    <meta name="description" content="BIOBINPROS: Eco-friendly residential and commercial bin cleaning, sanitizing, and deodorizing service in Halifax (HRM), Dartmouth, and surrounding areas.">
+    <meta name="keywords" content="bin cleaning, garbage bin cleaning, commercial cleaning, residential cleaning, Halifax, Dartmouth, HRM, eco-friendly">
+    <title>BIOBINPROS | Professional Bin Cleaning Service in HRM</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1>Transform Your Space, Renew Your Life</h1>
-        <p>At BioBin Pros, we specialize in turning your home, garage, or workspace into spotless, welcoming sanctuaries. Let us bring the sparkle back to your life.</p>
-        <a href="services.html" class="btn">Get Your Free Quote Today!</a>
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">BIOBINPROS</a>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html" data-target="hero-section">Home</a>
+            <a href="#services-overview" data-target="services-overview">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="cta-button nav-cta">Book Now</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
     </header>
-    
-    
-    <!-- About Us Section -->
-    <section id="about-us">
-        <h2>About Us</h2>
-        <p>BioBin Pros is dedicated to transforming spaces with top-notch cleaning services. Our team of experienced cleaners ensures your home, garage, or workspace is spotless, hygienic, and inviting.</p>
-        <!-- <img src="bathroom." alt="Clean bathroom"> -->
-    </section>
+    <main>
+        <section id="hero-section" class="hero">
+            <div class="hero-content">
+                <h1>Keeping your bins fresh, clean, and odor-free!</h1>
+                <p>Professional, eco-friendly residential & commercial bin cleaning right at your doorstep in the Halifax Regional Municipality.</p>
+                <a href="contact.html" class="cta-button primary-cta">Book Now & Get a Free Quote</a>
+            </div>
+            <div class="hero-image-placeholder" style="background-image: url('placeholder-hero.jpg');"></div>
+        </section>
 
-    <!-- Services Overview Section -->
-    <section id="services-overview">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <img src="bathroom1.webp" alt="Deep Cleaning">
-                <h3>Deep Cleaning</h3>
-                <p>Thorough cleaning for a fresh start.</p>
-                <a href="services.html" class="btn">Learn More</a>
+        <section id="before-after" class="section-padding">
+            <h2>See the BIOBINPROS Difference</h2>
+            <div class="gallery-slider">
+                <div class="slide">
+                    <div class="bin-image before" style="background-image: url('placeholder-before1.jpg');">Before</div>
+                    <div class="bin-image after" style="background-image: url('placeholder-after1.jpg');">After</div>
+                </div>
+                <div class="slide">
+                    <div class="bin-image before" style="background-image: url('placeholder-before2.jpg');">Before</div>
+                    <div class="bin-image after" style="background-image: url('placeholder-after2.jpg');">After</div>
+                </div>
             </div>
-            <div class="service-card">
-                <img src="garage.webp" alt="Garage Cleaning">
-                <h3>Garage Cleaning</h3>
-                <p>Organized and cleaned for functional use.</p>
-                <a href="services.html" class="btn">Learn More</a>
-            </div>
-            <div class="service-card">
-                <img src="cleaner1.webp" alt="Regular Cleaning">
-                <h3>Regular Cleaning</h3>
-                <p>Consistent cleaning for your comfort.</p>
-                <a href="services.html" class="btn">Learn More</a>
-            </div>
-            <div class="service-card">
-                <img src="sink1.webp" alt="Move-In/Move-Out Cleaning">
-                <h3>Move-In/Move-Out Cleaning</h3>
-                <p>Stress-free cleaning for smooth moves.</p>
-                <a href="services.html" class="btn">Learn More</a>
-            </div>
-        </div>
-    </section>
+            <a href="gallery.html" class="text-link">View Full Gallery &rarr;</a>
+        </section>
 
-    <!-- Customer Reviews Section -->
-    <section id="reviews">
-        <h2>What Our Customers Say</h2>
-        <div class="reviews-grid">
-            <div class="review-card">
-                <h3>John Doe</h3>
-                <p>Location: Toronto</p>
-                <p>"Amazing service! My home has never looked so clean and fresh."</p>
-            </div>
-            <div class="review-card">
-                <h3>Jane Smith</h3>
-                <p>Location: Vancouver</p>
-                <p>"BioBin Pros exceeded my expectations. Highly recommend!"</p>
-            </div>
-            <div class="review-card">
-                <h3>Michael Lee</h3>
-                <p>Location: Calgary</p>
-                <p>"Professional and detail-oriented. My garage is spotless."</p>
-            </div>
-        </div>
-    </section>
+        <section id="services-overview" class="services-overview section-padding">
+            <h2>Our Hassle-Free Cleaning Services</h2>
+            <div class="service-cards-container">
+                
+                <div class="service-card">
+                    <div class="icon">🏠</div> <h3>Residential Cleaning</h3>
+                    <p>Keep your home bins spotless, odor-free, and hygienic for your family's safety.</p>
+                    <a href="services.html#residential" class="text-link">Learn More</a>
+                </div>
 
-    <!-- Contact Us Section -->
-    <section id="contact-us">
-        <h2>Get in Touch</h2>
-        <p>Contact us today for your cleaning needs!</p>
-        <p><strong>Phone:</strong> (902) 919-6106</p>
-        <p><strong>Email:</strong> contact@biobinpros.com</p>
-        <a href="contact.html" class="btn">Contact Us</a>
-    </section>
+                <div class="service-card">
+                    <div class="icon">🏢</div> <h3>Commercial Cleaning</h3>
+                    <p>Professional disinfection and deep cleaning for businesses, restaurants, and property managers.</p>
+                    <a href="services.html#commercial" class="text-link">Learn More</a>
+                </div>
 
-    <!-- Footer -->
+                <div class="service-card">
+                    <div class="icon">💧</div> <h3>Eco-Friendly Solutions</h3>
+                    <p>We use biodegradable, high-pressure hot water and sanitizing agents, with zero runoff.</p>
+                    <a href="services.html#eco-friendly" class="text-link">Learn More</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials section-padding">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-container">
+                
+                <blockquote class="testimonial-card">
+                    <p>"My bins were disgusting, but BIOBINPROS made them look and smell brand new! Excellent service and very professional."</p>
+                    <footer>— Jane S., Halifax Customer</footer>
+                </blockquote>
+
+                <blockquote class="testimonial-card">
+                    <p>"We use them for all our commercial properties. Reliable, effective, and truly eco-friendly. Highly recommend!"</p>
+                    <footer>— Atlantic Property Management, Dartmouth</footer>
+                </blockquote>
+
+                <blockquote class="testimonial-card">
+                    <p>"The best bin cleaning service in HRM. Scheduling is a breeze and the results speak for themselves."</p>
+                    <footer>— Chris P., Surrounding Community</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="contact-cta" class="contact-cta">
+            <div class="cta-content">
+                <h2>Ready for Cleaner Bins?</h2>
+                <p>Stop dealing with odors and pests. Book your first professional cleaning today!</p>
+                <a href="contact.html" class="cta-button secondary-cta">Schedule Your Service</a>
+            </div>
+        </section>
+        
+    </main>
+
     <footer>
         <div class="footer-grid">
             <div class="footer-info">
-                <p>&copy; 2024 BioBin Pros. All rights reserved.</p>
+                <h4>BIOBINPROS</h4>
+                <p>Residential & Commercial Bin Cleaning Service</p>
+                <p>Serving HRM, Halifax, Dartmouth, and surrounding areas.</p>
             </div>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/share/aEmT9WM1uausNpxa/"><img src="facebook.webp" alt="Facebook"></a>
-                <a href="https://www.instagram.com/biobinpros"><img src="instagram.webp" alt="Instagram"></a>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
             </div>
+            <div class="footer-contact">
+                <h4>Contact Details</h4>
+                <p>📞 Phone: (902) 555-BINN</p>
+                <p>📧 Email: info@biobinpros.ca</p>
+                <p>📍 Address: [Your Business Mailing Address]</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 BIOBINPROS. All rights reserved. | <a href="#">Privacy Policy</a></p>
         </div>
     </footer>
 

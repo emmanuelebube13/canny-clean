@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your residential or commercial bin cleaning service instantly with BIOBINPROS in Halifax. Choose your service type and preferred date.">
+    <meta name="keywords" content="book bin cleaning, schedule service, bin cleaning quote, Halifax booking form">
+    <title>Book Now | BIOBINPROS Bin Cleaning Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo"><a href="index.html">BIOBINPROS</a></div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="book.html" class="cta-button nav-cta">Book Now</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </header>
+
+    <main>
+        <section class="section-padding">
+            <h1 class="fade-in">Schedule Your Hassle-Free Cleaning</h1>
+            <p class="fade-in" style="text-align: center; margin-bottom: 40px;">Fill out the form below and we’ll confirm your appointment within 24 hours.</p>
+
+            <div class="form-container fade-in">
+                <form id="book-form">
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Type *</label>
+                        <select id="service" name="service" required>
+                            <option value="">-- Select Service --</option>
+                            <option value="Residential Monthly">Residential: Monthly Cleaning</option>
+                            <option value="Residential Bi-Monthly">Residential: Bi-Monthly Cleaning</option>
+                            <option value="Residential One-Time">Residential: One-Time Deep Clean</option>
+                            <option value="Commercial Quote">Commercial: Request Quote</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Preferred Time Slot</label>
+                        <select id="time" name="time">
+                            <option value="">-- Select Time --</option>
+                            <option value="morning">Morning (9am - 12pm)</option>
+                            <option value="afternoon">Afternoon (1pm - 5pm)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Full Address (for service location) *</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="cta-button primary-cta">Submit Booking Request</button>
+                    
+                    <p style="text-align: center; margin-top: 15px; font-size: 0.9em;">We service Halifax, Dartmouth, and the entire HRM.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
