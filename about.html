@@ -7,6 +7,194 @@
     <meta name="keywords" content="BIOBINPROS mission, eco-friendly bin cleaning, Halifax bin cleaning company, service area HRM">
     <title>About BIOBINPROS | Eco-Friendly Bin Cleaning Experts</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(120deg, #e0f7fa 0%, #f8fafc 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #22313f;
+        }
+        .main-header {
+            background: rgba(255,255,255,0.95);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .about-hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 45vh;
+            background: linear-gradient(120deg, #b2ebf2 0%, #e0f7fa 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .about-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 0.5em;
+            color: #00796b;
+            text-shadow: 0 2px 12px #fff, 0 1px 0 #b2ebf2;
+        }
+        .about-hero .flag-ns {
+            max-width: 120px;
+            margin: 1em 0 0.5em 0;
+            filter: drop-shadow(0 2px 8px #b2ebf2);
+        }
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            align-items: stretch;
+            justify-content: center;
+            margin: 0 auto;
+            max-width: 1100px;
+            padding: 2.5rem 1rem 1rem 1rem;
+            background: rgba(255,255,255,0.95);
+            border-radius: 2rem;
+            box-shadow: 0 6px 32px 0 rgba(0,0,0,0.07);
+            position: relative;
+            z-index: 2;
+        }
+        .about-text {
+            flex: 2 1 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .about-text h2 {
+            font-size: 2rem;
+            color: #009688;
+            margin-bottom: 0.5em;
+        }
+        .about-text h3 {
+            font-size: 1.2rem;
+            color: #00796b;
+            margin-top: 1.2em;
+            margin-bottom: 0.3em;
+        }
+        .about-text p {
+            font-size: 1.08rem;
+            margin-bottom: 0.7em;
+            line-height: 1.7;
+        }
+        .service-area-list {
+            display: flex;
+            gap: 1.2em;
+            flex-wrap: wrap;
+            margin-top: 0.7em;
+            padding: 0;
+            list-style: none;
+        }
+        .service-area-list li {
+            background: linear-gradient(90deg, #b2dfdb 0%, #e0f2f1 100%);
+            color: #00695c;
+            font-weight: 600;
+            border-radius: 1em;
+            padding: 0.5em 1.2em;
+            box-shadow: 0 2px 8px rgba(0,150,136,0.07);
+            margin-bottom: 0.3em;
+            font-size: 1rem;
+        }
+        .about-image {
+            flex: 1 1 320px;
+            min-height: 320px;
+            border-radius: 1.5rem;
+            background: url('placeholder-team.jpg') center/cover no-repeat, linear-gradient(120deg, #b2ebf2 0%, #e0f7fa 100%);
+            box-shadow: 0 4px 24px 0 rgba(0,150,136,0.09);
+            position: relative;
+            overflow: hidden;
+        }
+        .about-image::after {
+            content: "";
+            display: block;
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(120deg, rgba(0,150,136,0.08) 0%, rgba(255,255,255,0.12) 100%);
+            pointer-events: none;
+        }
+        .about-badge {
+            position: absolute;
+            top: 1.2em;
+            left: 1.2em;
+            background: #fff;
+            color: #009688;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            border-radius: 1em;
+            box-shadow: 0 2px 8px rgba(0,150,136,0.07);
+            font-size: 1rem;
+            letter-spacing: 1px;
+            z-index: 2;
+        }
+        .about-icons {
+            display: flex;
+            gap: 2.5em;
+            justify-content: center;
+            margin: 2.5em 0 0.5em 0;
+        }
+        .about-icons .icon-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5em;
+        }
+        .about-icons svg {
+            width: 48px;
+            height: 48px;
+            fill: #009688;
+            background: #e0f2f1;
+            border-radius: 50%;
+            padding: 0.7em;
+            box-shadow: 0 2px 8px rgba(0,150,136,0.07);
+        }
+        .about-icons span {
+            font-size: 1rem;
+            color: #00796b;
+            font-weight: 500;
+        }
+        .contact-cta {
+            margin: 3em auto 0 auto;
+            max-width: 700px;
+            background: linear-gradient(90deg, #b2dfdb 0%, #e0f2f1 100%);
+            border-radius: 1.5em;
+            box-shadow: 0 2px 16px rgba(0,150,136,0.08);
+            padding: 2.5em 1.5em;
+            text-align: center;
+        }
+        .cta-content h2 {
+            color: #009688;
+            font-size: 2rem;
+            margin-bottom: 0.5em;
+        }
+        .cta-content p {
+            color: #22313f;
+            font-size: 1.1rem;
+            margin-bottom: 1.2em;
+        }
+        .cta-button.secondary-cta {
+            background: #009688;
+            color: #fff;
+            padding: 0.9em 2.2em;
+            border-radius: 2em;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(0,150,136,0.09);
+            transition: background 0.2s;
+        }
+        .cta-button.secondary-cta:hover {
+            background: #00796b;
+        }
+        @media (max-width: 900px) {
+            .about-content {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            .about-image {
+                min-height: 220px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -21,37 +209,58 @@
         </nav>
         <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
     </header>
-
     <main>
-        <section class="section-padding">
-            <h1 class="fade-in">Our Story & Commitment to Clean</h1>
+        <section class="about-hero">
+            <h1>Our Story & Commitment to Clean</h1>
+            <img 
+                src="Flag_of_Nova_Scotia.svg" 
+                alt="Flag of Nova Scotia" 
+                class="flag-ns"
+            >
+            <div class="about-icons">
+                <div class="icon-block">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                    <span>Local Roots</span>
+                </div>
+                <div class="icon-block">
+                    <svg viewBox="0 0 24 24"><path d="M12 4.14V2h-1v2.14C7.06 4.59 4 7.92 4 12c0 4.08 3.06 7.41 7 7.86V22h1v-2.14c3.94-.45 7-3.78 7-7.86 0-4.08-3.06-7.41-7-7.86zm0 13.72c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>
+                    <span>Eco-Friendly</span>
+                </div>
+                <div class="icon-block">
+                    <svg viewBox="0 0 24 24"><path d="M21 7L9 19l-5.5-5.5 1.41-1.41L9 16.17l10.59-10.59z"/></svg>
+                    <span>Professional</span>
+                </div>
+            </div>
         </section>
 
-        <section class="section-padding fade-in">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Mission: Hygienic Bins, Healthier Communities</h2>
-                    <p>BIOBINPROS was founded right here in the **Halifax Regional Municipality (HRM)** with a simple yet critical mission: to eliminate the unhygienic conditions found in everyday garbage, recycling, and organic bins. We believe that a clean bin is a vital step toward a clean, odor-free home and a healthier community.</p>
-                    
-                    <h3>Our Eco-Friendly Values</h3>
-                    <p>We are deeply committed to the environment. Unlike DIY cleaning that allows contaminated runoff into storm drains, our custom-built cleaning unit captures all wastewater. We use **100% biodegradable, high-pressure hot water** and sanitizing agents to disinfect your bins without harming the planet.</p>
-                    
-                    <h3>Service Area: Right to Your Doorstep</h3>
-                    <p>We proudly serve both **residential and commercial** clients across the entire HRM, including **Halifax, Dartmouth, Bedford, Sackville**, and surrounding communities. If your bins get picked up, we can clean them!</p>
-                    
-                    <ul class="service-area-list">
-                        <li>Halifax</li>
-                        <li>Dartmouth</li>
-                        <li>Bedford</li>
-                        <li>Sackville</li>
-                        <li>HRM</li>
-                    </ul>
-                </div>
-                <div class="about-image" style="background-image: url('placeholder-team.jpg');"></div>
+        <section class="about-content">
+            <div class="about-text">
+                <h2>Mission: Hygienic Bins, Healthier Communities</h2>
+                <p>
+                    <span style="font-size:1.3em; color:#009688; font-weight:600;">BIOBINPROS</span> was born in the heart of <strong>Halifax Regional Municipality</strong> to transform the way our community thinks about cleanliness. We believe a sanitized bin is more than a chore—it's a step toward a fresher, healthier home and neighborhood.
+                </p>
+                <h3>Our Eco-Friendly Values</h3>
+                <p>
+                    Our custom-built cleaning unit captures every drop of wastewater, using <strong>100% biodegradable, high-pressure hot water</strong> and eco-safe agents. We protect your family and the planet—no runoff, no harsh chemicals, just pure clean.
+                </p>
+                <h3>Service Area: Right to Your Doorstep</h3>
+                <p>
+                    Serving <strong>residential and commercial</strong> clients across the HRM, we bring our expertise to <strong>Halifax, Dartmouth, Bedford, Sackville</strong>, and beyond. If your bins are collected, we can clean them—right at your curb.
+                </p>
+                <ul class="service-area-list">
+                    <li>Halifax</li>
+                    <li>Dartmouth</li>
+                    <li>Bedford</li>
+                    <li>Sackville</li>
+                    <li>HRM</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <div class="about-badge">Certified Clean</div>
             </div>
         </section>
         
-        <section id="contact-cta" class="contact-cta fade-in">
+        <section id="contact-cta" class="contact-cta">
             <div class="cta-content">
                 <h2>Ready for Cleaner Bins?</h2>
                 <p>Stop dealing with odors and pests. Book your first professional cleaning today!</p>
@@ -61,7 +270,7 @@
     </main>
 
     <footer>
-        </footer>
+    </footer>
 
     <script src="script.js"></script>
 </body>
