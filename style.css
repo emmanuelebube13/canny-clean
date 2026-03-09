@@ -25,16 +25,16 @@
 
 /* 1. ======================= CSS VARIABLES & RESET ======================= */
 :root {
-    --color-primary: #0077b6; /* Maritime Blue - Inspired by Halifax's coastal vibe, represents freshness and water */
-    --color-secondary: #2a9d8f; /* Eco Green - Symbolizes cleanliness, sustainability, and nature */
-    --color-accent: #e9c46a; /* Subtle Yellow - For highlights, evoking energy and positivity */
-    --color-dark: #264653; /* Deep Charcoal - For text and backgrounds, grounded and professional */
-    --color-light: #f4f1de; /* Soft Beige - Light backgrounds, easy on the eyes for all ages */
+    --color-primary: #00b4d8; /* Bright Cyan Blue - Fresh, watery feel for cleaning, inspired by Halifax ocean vibes */
+    --color-secondary: #52b788; /* Vibrant Green - Eco-friendly, lively, brightens the day */
+    --color-accent: #ffd166; /* Sunny Yellow - Positive, energetic highlights to cheer up users */
+    --color-dark: #023047; /* Soft Navy - For text, balanced and readable without being harsh */
+    --color-light: #fdfdfd; /* Almost White Beige - Light, airy backgrounds for a bright feel */
     --color-white: #ffffff;
-    --color-text: #333333;
-    --color-border: #e5e5e5;
-    --color-error: #d62828; /* Red for errors */
-    --color-success: #52b788; /* Green for success */
+    --color-text: #212529;
+    --color-border: #dee2e6;
+    --color-error: #ef233c; /* Soft Red for errors */
+    --color-success: #38b000; /* Bright Green for success */
 
     --font-heading: 'Montserrat', sans-serif; /* Bold, modern headings */
     --font-body: 'Roboto', sans-serif; /* Clean, readable body text */
@@ -48,9 +48,9 @@
     --border-radius-medium: 8px;
     --border-radius-large: 16px;
 
-    --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.1);
-    --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.15);
-    --shadow-hover: 0 6px 24px rgba(0, 0, 0, 0.2);
+    --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.05); /* Lighter shadow for bright theme */
+    --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 6px 24px rgba(0, 0, 0, 0.12);
 
     --transition-fast: 0.2s ease;
     --transition-medium: 0.3s ease;
@@ -74,7 +74,7 @@ body {
     font-family: var(--font-body);
     line-height: 1.6;
     color: var(--color-text);
-    background-color: var(--color-white);
+    background-color: var(--color-light); /* Brighter background */
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -196,7 +196,7 @@ li {
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: darken(var(--color-primary), 10%);
+    background-color: #48cae4; /* Lighter blue for hover */
     box-shadow: var(--shadow-hover);
 }
 
@@ -207,7 +207,7 @@ li {
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-    background-color: darken(var(--color-secondary), 10%);
+    background-color: #76c893; /* Lighter green for hover */
     box-shadow: var(--shadow-hover);
 }
 
@@ -236,7 +236,7 @@ li {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--color-primary);
+    background-color: var(--color-accent); /* Yellow underline for brightness */
     transition: width var(--transition-fast);
 }
 
@@ -289,7 +289,7 @@ li {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--color-secondary);
+    background-color: var(--color-accent); /* Yellow for bright hover */
     transition: width var(--transition-fast);
 }
 
@@ -322,7 +322,7 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,0.5));
+    background: linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0.3)); /* Lighter gradient */
     z-index: 1;
 }
 
@@ -335,6 +335,7 @@ li {
 .hero-content h1 {
     font-size: 4rem;
     line-height: 1.1;
+    color: var(--color-primary); /* Bright blue for heading */
 }
 
 .hero-content p {
@@ -378,6 +379,7 @@ li {
     box-shadow: var(--shadow-soft);
     border-radius: var(--border-radius-large);
     overflow: hidden;
+    background-color: var(--color-light); /* Lighter slide background */
 }
 
 .bin-image {
@@ -391,8 +393,8 @@ li {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    background-color: rgba(0,0,0,0.6);
-    color: var(--color-white);
+    background-color: rgba(255,255,255,0.8); /* Lighter label background */
+    color: var(--color-dark);
     padding: var(--spacing-small) var(--spacing-medium);
     border-radius: var(--border-radius-small);
 }
@@ -420,6 +422,7 @@ li {
 .service-card:hover {
     box-shadow: var(--shadow-hover);
     transform: translateY(-10px);
+    background-color: #f9f9f9; /* Even lighter on hover */
 }
 
 .service-card .icon {
@@ -454,7 +457,7 @@ li {
     left: 20px;
     font-size: 4rem;
     color: var(--color-accent);
-    opacity: 0.5;
+    opacity: 0.3; /* Softer opacity for brightness */
 }
 
 .testimonial p {
@@ -465,6 +468,7 @@ li {
     margin-top: var(--spacing-medium);
     text-align: right;
     font-weight: 600;
+    color: var(--color-primary);
 }
 
 /* 10. ======================= FAQ SECTION ======================= */
@@ -486,6 +490,7 @@ li {
     cursor: pointer;
     padding: var(--spacing-medium) 0;
     position: relative;
+    color: var(--color-dark);
 }
 
 .faq-item h3::after {
@@ -493,6 +498,7 @@ li {
     position: absolute;
     right: 0;
     transition: transform var(--transition-fast);
+    color: var(--color-accent);
 }
 
 .faq-item[aria-expanded="true"] h3::after {
@@ -510,14 +516,15 @@ li {
 
 /* 11. ======================= CALL-TO-ACTION SECTIONS ======================= */
 .cta-section {
-    background-color: var(--color-secondary);
-    color: var(--color-white);
+    background-color: var(--color-accent); /* Yellow for bright, positive CTA */
+    color: var(--color-dark);
     padding: var(--spacing-xlarge) var(--spacing-medium);
     text-align: center;
 }
 
 .cta-content h2 {
     font-size: 2.5rem;
+    color: var(--color-primary);
 }
 
 .cta-content p {
@@ -527,8 +534,8 @@ li {
 
 /* 12. ======================= FOOTER ======================= */
 footer {
-    background-color: var(--color-dark);
-    color: var(--color-light);
+    background-color: var(--color-primary); /* Blue footer for business vibe */
+    color: var(--color-white);
     padding: var(--spacing-xlarge) var(--spacing-medium);
 }
 
@@ -547,7 +554,7 @@ footer {
 
 .footer-navigation a {
     display: block;
-    color: var(--color-light);
+    color: var(--color-white);
     margin-bottom: var(--spacing-small);
 }
 
@@ -561,7 +568,7 @@ footer {
 }
 
 .social-links a {
-    color: var(--color-light);
+    color: var(--color-white);
     font-size: 1.5rem;
 }
 
@@ -572,7 +579,7 @@ footer {
 .footer-copyright {
     text-align: center;
     margin-top: var(--spacing-large);
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.2);
     padding-top: var(--spacing-medium);
 }
 
@@ -594,6 +601,7 @@ footer {
     display: block;
     margin-bottom: var(--spacing-small);
     font-weight: 600;
+    color: var(--color-dark);
 }
 
 .form-group input,
@@ -604,6 +612,7 @@ footer {
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius-small);
     transition: border-color var(--transition-fast);
+    background-color: #f8f9fa; /* Light gray for inputs */
 }
 
 .form-group input:focus,
@@ -655,6 +664,7 @@ footer {
     width: 100%;
     height: auto;
     display: block;
+    object-fit: cover; /* Ensure images fit nicely */
 }
 
 .caption {
@@ -662,8 +672,8 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(0,0,0,0.5);
-    color: var(--color-white);
+    background: rgba(255,255,255,0.8); /* Lighter caption background */
+    color: var(--color-dark);
     text-align: center;
     padding: var(--spacing-small);
 }
@@ -676,7 +686,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.8);
+    background: rgba(255,255,255,0.9); /* Lighter overlay for bright theme */
     justify-content: center;
     align-items: center;
     z-index: 2000;
@@ -697,7 +707,7 @@ footer {
     top: 20px;
     right: 20px;
     font-size: 2rem;
-    color: var(--color-white);
+    color: var(--color-dark);
     cursor: pointer;
 }
 
@@ -761,7 +771,7 @@ footer {
 }
 
 .service-area-list li {
-    background-color: var(--color-light);
+    background-color: #fff; /* White for brighter list items */
     padding: var(--spacing-small) var(--spacing-medium);
     border-radius: var(--border-radius-small);
     box-shadow: var(--shadow-soft);
@@ -771,7 +781,7 @@ footer {
 .pricing-section {
     max-width: 800px;
     margin: 0 auto;
-    background-color: var(--color-light);
+    background-color: #fff; /* White for pricing */
     padding: var(--spacing-large);
     border-radius: var(--border-radius-large);
     box-shadow: var(--shadow-medium);
@@ -807,8 +817,8 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: var(--color-white);
+    background: rgba(255,255,255,0.7); /* Lighter arrows */
+    color: var(--color-dark);
     border: none;
     padding: var(--spacing-small);
     cursor: pointer;
@@ -978,11 +988,11 @@ footer {
 /* 21. ======================= DARK MODE SUPPORT ======================= */
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-white: #1e1e1e;
-        --color-light: #2a2a2a;
-        --color-dark: #ffffff;
-        --color-text: #dddddd;
-        --color-border: #444444;
+        --color-white: #121212;
+        --color-light: #1e1e1e;
+        --color-dark: #e0e0e0;
+        --color-text: #cccccc;
+        --color-border: #333333;
     }
 
     body {
