@@ -1,94 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Detailed breakdown of residential, commercial, and eco-friendly bin cleaning services offered by BIOBINPROS in Halifax, Dartmouth, and HRM.">
-    <meta name="keywords" content="residential bin cleaning, commercial bin cleaning, eco-friendly cleaning, bin sanitizing services, pricing Halifax">
-    <title>Our Services & Pricing | BIOBINPROS</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header class="main-header">
-        <div class="logo"><a href="index.html">BIOBINPROS</a></div>
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About Us</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="book.html" class="cta-button nav-cta">Book Now</a>
-        </nav>
-        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-    </header>
-
-    <main>
-        <section class="section-padding">
-            <h1 class="fade-in">Our Professional Cleaning Solutions</h1>
-            <p class="fade-in" style="text-align: center; margin-bottom: 40px;">Choose the service that fits your needs—from one-time deep cleans to recurring monthly maintenance.</p>
-
-            <div id="residential" class="service-cards-container fade-in">
-                <div class="service-card">
-                    <div class="icon">🏠</div>
-                    <h3>Residential Bin Cleaning</h3>
-                    <p>Perfect for homeowners who want to eliminate odors, grime, and bacteria from their garbage, recycling, and organic bins.</p>
-                    <ul style="text-align: left; margin-top: 15px;">
-                        <li>Includes: High-pressure hot water wash</li>
-                        <li>Includes: Hospital-grade disinfection</li>
-                        <li>Includes: Biodegradable deodorizer</li>
-                    </ul>
-                    <a href="book.html" class="text-link">Book Residential Service</a>
-                </div>
-
-                <div class="service-card" style="animation-delay: 0.1s;">
-                    <div class="icon">🏢</div>
-                    <h3>Commercial Property Service</h3>
-                    <p>Ensure compliance and hygiene for restaurants, offices, apartments, and commercial complexes.</p>
-                    <ul style="text-align: left; margin-top: 15px;">
-                        <li>Large dumpster cleaning</li>
-                        <li>Dumpster pad disinfection</li>
-                        <li>Flexible, off-hours scheduling</li>
-                    </ul>
-                    <a href="book.html?type=commercial" class="text-link">Request Commercial Quote</a>
-                </div>
-
-                <div class="service-card" style="animation-delay: 0.2s;">
-                    <div class="icon">🌿</div>
-                    <h3>Our Eco-Promise</h3>
-                    <p>We use state-of-the-art mobile cleaning units that capture and filter wastewater, ensuring zero harmful runoff.</p>
-                    <ul style="text-align: left; margin-top: 15px;">
-                        <li>100% Biodegradable detergents</li>
-                        <li>Water reclamation system</li>
-                        <li>Serving a healthier HRM</li>
-                    </ul>
-                    <a href="about.html" class="text-link">Learn About Our Mission</a>
-                </div>
-            </div>
-            
-            <h2 class="fade-in" style="margin-top: 60px;">Simple & Transparent Pricing</h2>
-            <div class="fade-in pricing-table" style="max-width: 800px; margin: 0 auto; background-color: var(--color-light); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow-soft);">
-                <h3 style="text-align: left; color: var(--color-primary);">Residential Plans (Based on 2 Bins)</h3>
-                <p><strong>Monthly Service:</strong> $29.99/month</p>
-                <p><strong>Bi-Monthly Service:</strong> $39.99/clean</p>
-                <p><strong>One-Time Clean:</strong> $59.99</p>
-                <p style="margin-top: 15px;">*Additional bins are $10 each. Commercial pricing requires a custom quote via our booking form.</p>
-                <a href="book.html" class="cta-button primary-cta" style="margin-top: 25px;">Start Your Service</a>
-            </div>
-        </section>
-    </main>
-
-    <div class="footer-cta fade-in">
-        <h3>Book your cleaning today – Fresh bins, happy home!</h3>
-        <a href="book.html" class="cta-button secondary-cta">Schedule Now!</a>
+<header class="main-header">
+    <div class="logo">
+        <a href="index.html">BIOBINPROS</a>
     </div>
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="cta-button nav-cta">Book Now</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+</header>
 
-    <footer>
-        </footer>
+<main>
+    <section id="services" class="section-padding">
+        <h1>Our Expert Cleaning Services</h1>
+        <p class="intro-text">Select from our tailored services designed for residential and commercial needs, featuring one-time cleans or ongoing maintenance plans for optimal hygiene.</p>
 
-    <a href="book.html" class="floating-cta">Book Now</a>
-    <a href="https://wa.me/1902555BINS" target="_blank" class="whatsapp-widget" aria-label="Chat on WhatsApp">
-        <img src="whatsapp-icon.png" alt="WhatsApp">
-    </a>
-    <div class="back-to-top">&#9650;</div> <script src="script.js"></script>
-</body>
-</html>
+        <div class="service-cards">
+
+            <div class="service-card" id="residential">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                </div>
+                <h3>Residential Bin Sanitizing</h3>
+                <p>Ideal for households seeking to remove odors, residue, and pathogens from garbage, recycling, and compost bins.</p>
+                <ul>
+                    <li>High-pressure hot water cleaning</li>
+                    <li>Medical-grade sanitization</li>
+                    <li>Environmentally safe deodorization</li>
+                </ul>
+                <a href="contact.html" class="text-link">Book Residential Service</a>
+            </div>
+
+            <div class="service-card" id="commercial">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24"><path d="M21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15H3V6h18v13z"/></svg>
+                </div>
+                <h3>Commercial Bin Solutions</h3>
+                <p>Maintain regulatory standards and cleanliness for businesses, restaurants, offices, and multi-unit properties.</p>
+                <ul>
+                    <li>Heavy-duty dumpster cleaning</li>
+                    <li>Enclosure and pad disinfection</li>
+                    <li>Customizable scheduling options</li>
+                </ul>
+                <a href="contact.html?type=commercial" class="text-link">Request Commercial Quote</a>
+            </div>
+
+            <div class="service-card" id="eco-friendly">
+                <div class="icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.5l5 4.5v5h-4v3h-2v-3H7v-5l5-4.5m0-2l-7 6.3V13h4v3h6v-3h4v-6.2l-7-6.3z"/></svg>
+                </div>
+                <h3>Eco-Conscious Approach</h3>
+                <p>Our advanced mobile units recycle water and prevent environmental impact, delivering sustainable results.</p>
+                <ul>
+                    <li>Fully biodegradable solutions</li>
+                    <li>Zero-waste water management</li>
+                    <li>Commitment to community health</li>
+                </ul>
+                <a href="about.html" class="text-link">Discover Our Values</a>
+            </div>
+
+        </div>
+        
+        <h2>Pricing Overview</h2>
+        <div class="pricing-section">
+            <h3>Residential Pricing (For Up to 2 Bins)</h3>
+            <ul>
+                <li><strong>Monthly Subscription:</strong> $29.99 per month</li>
+                <li><strong>Bi-Monthly Service:</strong> $39.99 per cleaning</li>
+                <li><strong>One-Time Deep Clean:</strong> $59.99</li>
+            </ul>
+            <p>* Each additional bin: $10. Commercial services are priced upon request via custom quote.</p>
+            <a href="contact.html" class="cta-button primary-cta">Get Started</a>
+        </div>
+    </section>
+</main>
+
+<section id="cta" class="cta-section">
+    <div class="cta-content">
+        <h2>Ready for Superior Cleanliness?</h2>
+        <p>Transform your bins with our professional services. Schedule your appointment today.</p>
+        <a href="contact.html" class="cta-button secondary-cta">Book Your Service</a>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h4>BIOBINPROS</h4>
+            <p>Expert Residential & Commercial Bin Cleaning</p>
+            <p>Proudly serving HRM, Halifax, Dartmouth, and nearby communities.</p>
+        </div>
+        <div class="footer-navigation">
+            <h4>Navigation</h4>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-contact">
+            <h4>Get in Touch</h4>
+            <p>Phone: (902) 919-6106</p>
+            <p>Email: biobinpros@gmail.com</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>&copy; 2026 BIOBINPROS. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </div>
+</footer>
+
+<a href="contact.html" class="floating-cta">Book Now</a>
+<div class="back-to-top">&#9650;</div>
+
+<script src="script.js"></script>
