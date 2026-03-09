@@ -1,65 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="View our before and after gallery of professionally cleaned, sanitized, and deodorized residential and commercial bins by BIOBINPROS in Halifax.">
-    <meta name="keywords" content="bin cleaning before and after, trash bin cleaning gallery, professional results, clean bins Halifax">
-    <title>Gallery | BIOBINPROS Before & After</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<header class="main-header">
+    <div class="logo">
+        <a href="index.html">BIOBINPROS</a>
+    </div>
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="cta-button nav-cta">Book Now</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+</header>
 
-    <header class="main-header">
-        <div class="logo"><a href="index.html">BIOBINPROS</a></div>
-        <nav class="main-nav">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
+<main>
+    <section id="gallery" class="section-padding">
+        <h1>Witness the BIOBINPROS Transformation</h1>
+        <p class="intro-text">Discover the remarkable difference our professional cleaning services make. View high-resolution before and after images of bins we've sanitized and deodorized. Click any image to enlarge.</p>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="before-residential1.jpg" alt="Residential Bin Before Professional Cleaning" loading="lazy">
+                <div class="caption">Before: Residential Bin</div>
+            </div>
+            <div class="gallery-item">
+                <img src="after-residential1.jpg" alt="Residential Bin After Professional Cleaning" loading="lazy">
+                <div class="caption">After: Residential Bin</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="before-commercial1.jpg" alt="Commercial Dumpster Before Cleaning" loading="lazy">
+                <div class="caption">Before: Commercial Dumpster</div>
+            </div>
+            <div class="gallery-item">
+                <img src="after-commercial1.jpg" alt="Commercial Dumpster After Cleaning" loading="lazy">
+                <div class="caption">After: Commercial Dumpster</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="before-organic1.jpg" alt="Organic Waste Bin Before Sanitizing" loading="lazy">
+                <div class="caption">Before: Organic Waste Bin</div>
+            </div>
+            <div class="gallery-item">
+                <img src="after-organic1.jpg" alt="Organic Waste Bin After Sanitizing" loading="lazy">
+                <div class="caption">After: Organic Waste Bin</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="before-residential2.jpg" alt="Another Residential Bin Before Cleaning" loading="lazy">
+                <div class="caption">Before: Residential Bin</div>
+            </div>
+            <div class="gallery-item">
+                <img src="after-residential2.jpg" alt="Another Residential Bin After Cleaning" loading="lazy">
+                <div class="caption">After: Residential Bin</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="before-commercial2.jpg" alt="Commercial Area Before Service" loading="lazy">
+                <div class="caption">Before: Commercial Area</div>
+            </div>
+            <div class="gallery-item">
+                <img src="after-commercial2.jpg" alt="Commercial Area After Service" loading="lazy">
+                <div class="caption">After: Commercial Area</div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<div id="lightbox" class="lightbox">
+    <span id="lightbox-close" class="lightbox-close">&times;</span>
+    <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="Enlarged Gallery Image">
+    </div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h4>BIOBINPROS</h4>
+            <p>Expert Residential & Commercial Bin Cleaning</p>
+            <p>Proudly serving HRM, Halifax, Dartmouth, and nearby communities.</p>
+        </div>
+        <div class="footer-navigation">
+            <h4>Navigation</h4>
             <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
             <a href="gallery.html">Gallery</a>
-            <a href="book.html" class="cta-button nav-cta">Book Now</a>
-        </nav>
-        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-    </header>
-
-    <main>
-        <section class="section-padding">
-            <h1 class="fade-in">The BIOBINPROS Difference: Before & After</h1>
-            <p class="fade-in" style="text-align: center; margin-bottom: 40px;">Witness the power of high-pressure cleaning and professional sanitization. Click any image to enlarge.</p>
-
-            <div class="gallery-grid">
-                <div class="gallery-item fade-in">
-                    <img src="placeholder-before1.jpg" alt="Dirty Residential Bin Before Cleaning" loading="lazy">
-                </div>
-                <div class="gallery-item fade-in" style="animation-delay: 0.1s;">
-                    <img src="placeholder-after1.jpg" alt="Clean Residential Bin After Cleaning" loading="lazy">
-                </div>
-                <div class="gallery-item fade-in" style="animation-delay: 0.2s;">
-                    <img src="placeholder-before2.jpg" alt="Commercial Dumpster Pad Before Cleaning" loading="lazy">
-                </div>
-                <div class="gallery-item fade-in" style="animation-delay: 0.3s;">
-                    <img src="placeholder-after2.jpg" alt="Commercial Dumpster Pad After Cleaning" loading="lazy">
-                </div>
-                <div class="gallery-item fade-in" style="animation-delay: 0.4s;">
-                    <img src="placeholder-before3.jpg" alt="Organic Bin Before Cleaning" loading="lazy">
-                </div>
-                <div class="gallery-item fade-in" style="animation-delay: 0.5s;">
-                    <img src="placeholder-after3.jpg" alt="Organic Bin After Cleaning" loading="lazy">
-                </div>
-                </div>
-        </section>
-    </main>
-    
-    <div id="lightbox" class="lightbox">
-        <span id="lightbox-close" class="lightbox-close">&times;</span>
-        <div class="lightbox-content">
-            <img id="lightbox-img" src="" alt="Enlarged Bin Image">
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-contact">
+            <h4>Get in Touch</h4>
+            <p>Phone: (902) 919-6106</p>
+            <p>Email: biobinpros@gmail.com</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Instagram">📸</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+            </div>
         </div>
     </div>
+    <div class="footer-copyright">
+        <p>&copy; 2026 BIOBINPROS. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </div>
+</footer>
 
-    <footer>
-        </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+<script src="script.js"></script>
