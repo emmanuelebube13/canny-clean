@@ -31,19 +31,30 @@
                 <p>Discover professional, eco-conscious bin cleaning solutions delivered directly to your doorstep in Halifax Regional Municipality and beyond.</p>
                 <a href="contact.html" class="cta-button primary-cta">Get Your Free Quote & Book Today</a>
             </div>
-            <div class="hero-image" style="background-image: url('biobinimages/PXL_20250912_185637604[1].jpg');"></div>
+            <picture class="hero-image">
+                <source srcset="biobinimages/PXL_20250912_185637604[1].jpg" media="(min-width: 768px)">
+                <img src="biobinimages/PXL_20250912_185637604[1].jpg" alt="Hero Image for Bin Cleaning" loading="lazy" style="object-fit: cover; width: 100%; height: auto;">
+            </picture>
         </section>
 
         <section id="before-after" class="section-padding">
             <h2>Experience the BIOBINPROS Transformation</h2>
             <div class="gallery-slider">
                 <div class="slide">
-                    <div class="bin-image before" style="background-image: url('biobinimages/PXL_20250912_185641879.jpg');">Before</div>
-                    <div class="bin-image after" style="background-image: url('biobinimages/PXL_20250912_190859419.jpg');">After</div>
+                    <picture class="bin-image before">
+                        <img src="biobinimages/PXL_20250912_185641879.jpg" alt="Before Bin Cleaning" loading="lazy" style="object-fit: cover; width: 100%; height: auto;">
+                    </picture>
+                    <picture class="bin-image after">
+                        <img src="biobinimages/PXL_20250912_190859419.jpg" alt="After Bin Cleaning" loading="lazy" style="object-fit: cover; width: 100%; height: auto;">
+                    </picture>
                 </div>
                 <div class="slide">
-                    <div class="bin-image before" style="background-image: url('biobinimages/PXL_20250912_190902228.jpg');">Before</div>
-                    <div class="bin-image after" style="background-image: url('biobinimages/PXL_20250912_190904922.jpg');">After</div>
+                    <picture class="bin-image before">
+                        <img src="biobinimages/PXL_20250912_190902228.jpg" alt="Before Bin Cleaning" loading="lazy" style="object-fit: cover; width: 100%; height: auto;">
+                    </picture>
+                    <picture class="bin-image after">
+                        <img src="biobinimages/PXL_20250912_190904922.jpg" alt="After Bin Cleaning" loading="lazy" style="object-fit: cover; width: 100%; height: auto;">
+                    </picture>
                 </div>
                 <!-- Add more slides if needed -->
             </div>
@@ -110,32 +121,32 @@
             <h2>Frequently Asked Questions</h2>
             <div class="faq-container">
 
-                <div class="faq-item">
+                <div class="faq-item" role="button" tabindex="0" aria-expanded="false">
                     <h3>What is professional bin cleaning?</h3>
                     <p>Professional bin cleaning involves using high-pressure hot water and eco-friendly sanitizers to thoroughly clean, disinfect, and deodorize your garbage bins, removing dirt, bacteria, and odors effectively.</p>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item" role="button" tabindex="0" aria-expanded="false">
                     <h3>How often should I have my bins cleaned?</h3>
                     <p>We recommend cleaning your bins every 1-3 months, depending on usage and environmental factors, to maintain hygiene and prevent pest infestations.</p>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item" role="button" tabindex="0" aria-expanded="false">
                     <h3>Are your cleaning products eco-friendly?</h3>
                     <p>Yes, we use biodegradable, non-toxic cleaning agents that are safe for the environment, with no harmful chemicals entering the waterways.</p>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item" role="button" tabindex="0" aria-expanded="false">
                     <h3>What areas do you serve?</h3>
                     <p>We proudly serve the Halifax Regional Municipality (HRM), including Halifax, Dartmouth, and surrounding communities.</p>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item" role="button" tabindex="0" aria-expanded="false">
                     <h3>How can I book a service?</h3>
                     <p>You can book easily through our website by visiting the contact page, calling us at (902) 919-6106, or emailing biobinpros@gmail.com for a free quote.</p>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item" role="button" tabindex="0" aria-expanded="false">
                     <h3>What is the cost of your services?</h3>
                     <p>Pricing varies based on the type and number of bins, as well as frequency of service. Contact us for a personalized quote tailored to your needs.</p>
                 </div>
@@ -172,7 +183,6 @@
                 <p>Phone: (902) 919-6106</p>
                 <p>Email: biobinpros@gmail.com</p>
                 <div class="social-links">
-                    <!-- Add social icons if available -->
                     <a href="#" aria-label="Facebook">Facebook</a>
                     <a href="#" aria-label="Instagram">Instagram</a>
                     <a href="#" aria-label="Twitter">Twitter</a>
@@ -183,6 +193,9 @@
             <p>&copy; 2026 BIOBINPROS. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
         </div>
     </footer>
+
+    <a href="contact.html" class="floating-cta">Book Now</a>
+    <div class="back-to-top">&#9650;</div>
 
     <script src="script.js"></script>
 </body>
